@@ -15,7 +15,7 @@
       <a-assets>
         <video
           id="myVideo"
-          src="./assets/zhuoshui_river_ar_motion.mp4"
+          src="./assets/zhuoshui_river_ar_motion.webm"
           preload="auto"
           loop="true"
           response-type="arraybuffer"
@@ -31,8 +31,8 @@
         <a-video
           src="#myVideo"
           position="0 0 0"
-          height="1.5"
-          width="0.828"
+          height="2.5"
+          width="1.38"
           rotation="0 0 0"
         ></a-video>
       </a-entity>
@@ -44,11 +44,6 @@
       target.addEventListener("targetFound", (event) => {
         console.log("發現目標，播放影片");
         video.play();
-      });
-
-      target.addEventListener("targetLost", (event) => {
-        console.log("失去目標，暫停影片");
-        video.pause();
       });
     </script>
   </body>
